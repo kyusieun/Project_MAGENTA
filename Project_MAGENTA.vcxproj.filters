@@ -28,15 +28,60 @@
     <Filter Include="IORingExec">
       <UniqueIdentifier>{8048164f-1212-4963-8fec-5b615e03e290}</UniqueIdentifier>
     </Filter>
+    <Filter Include="FixedImageMapping\include">
+      <UniqueIdentifier>{76ea2781-1ebd-4073-ba89-9b82ea295e20}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="kdmapper\intel_driver.cpp">
+      <Filter>FixedImageMapping</Filter>
+    </ClCompile>
+    <ClCompile Include="kdmapper\kdmain.cpp">
+      <Filter>FixedImageMapping</Filter>
+    </ClCompile>
+    <ClCompile Include="kdmapper\kdmapper.cpp">
+      <Filter>FixedImageMapping</Filter>
+    </ClCompile>
+    <ClCompile Include="kdmapper\portable_executable.cpp">
+      <Filter>FixedImageMapping</Filter>
+    </ClCompile>
+    <ClCompile Include="kdmapper\service.cpp">
+      <Filter>FixedImageMapping</Filter>
+    </ClCompile>
+    <ClCompile Include="kdmapper\utils.cpp">
+      <Filter>FixedImageMapping</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.hpp">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="kdmapper\intel_driver.hpp">
+      <Filter>FixedImageMapping\include</Filter>
+    </ClInclude>
+    <ClInclude Include="kdmapper\intel_driver_resource.hpp">
+      <Filter>FixedImageMapping\include</Filter>
+    </ClInclude>
+    <ClInclude Include="kdmapper\kdmain.hpp">
+      <Filter>FixedImageMapping\include</Filter>
+    </ClInclude>
+    <ClInclude Include="kdmapper\kdmapper.hpp">
+      <Filter>FixedImageMapping\include</Filter>
+    </ClInclude>
+    <ClInclude Include="kdmapper\nt.hpp">
+      <Filter>FixedImageMapping\include</Filter>
+    </ClInclude>
+    <ClInclude Include="kdmapper\portable_executable.hpp">
+      <Filter>FixedImageMapping\include</Filter>
+    </ClInclude>
+    <ClInclude Include="kdmapper\service.hpp">
+      <Filter>FixedImageMapping\include</Filter>
+    </ClInclude>
+    <ClInclude Include="kdmapper\utils.hpp">
+      <Filter>FixedImageMapping\include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

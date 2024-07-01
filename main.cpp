@@ -61,3 +61,8 @@ int main() {
 
     return 0;
 }
+
+void DSEFixMapping() {};
+void MSRExec() {};
+void LargePageMapping() {};
+void IORingExec() {};
