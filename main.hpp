@@ -2,12 +2,11 @@
 #include <windows.h>
 #include "./kdmapper/kdmain.hpp"
 
-void DSEFixMapping();
+void DSEFixMapping() {};
 int FixedImageMapping() {
 	return kdmain();
 }
-void MSRExec();
-void LargePageMapping();
-void IORingExec();
-
+void MSRExec() {};
+void LargePageMapping() {};
+void IORingExec() {};
 
