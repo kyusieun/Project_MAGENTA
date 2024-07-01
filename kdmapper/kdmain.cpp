@@ -10,7 +10,7 @@
 HANDLE iqvw64e_device_handle;
 
 
-LONG WINAPI SimplestCrashHandler(EXCEPTION_POINTERS* ExceptionInfo)
+LONG WINAPI SimplestCrashHandlerKD(EXCEPTION_POINTERS* ExceptionInfo)
 {
 	if (ExceptionInfo && ExceptionInfo->ExceptionRecord)
 		Log(L"[!!] Crash at addr 0x" << ExceptionInfo->ExceptionRecord->ExceptionAddress << L" by 0x" << std::hex << ExceptionInfo->ExceptionRecord->ExceptionCode << std::endl);
@@ -96,7 +96,7 @@ void PauseIfParentIsExplorer() {
 
 int kdmain() {
 	setlocale(LC_ALL, "");
-	SetUnhandledExceptionFilter(SimplestCrashHandler);
+	SetUnhandledExceptionFilter(SimplestCrashHandlerKD);
 
 	std::wstring driver_path;
 	std::getline(std::wcin, driver_path);

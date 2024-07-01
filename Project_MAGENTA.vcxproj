@@ -134,6 +134,7 @@
     <ClCompile Include="kdmapper\portable_executable.cpp" />
     <ClCompile Include="kdmapper\service.cpp" />
     <ClCompile Include="kdmapper\utils.cpp" />
+    <ClCompile Include="lpmapper\lpmapper.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +146,8 @@
     <ClInclude Include="kdmapper\portable_executable.hpp" />
     <ClInclude Include="kdmapper\service.hpp" />
     <ClInclude Include="kdmapper\utils.hpp" />
+    <ClInclude Include="lpmapper\shellcode.hpp" />
+    <ClInclude Include="lpmapper\structs.hpp" />
     <ClInclude Include="main.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

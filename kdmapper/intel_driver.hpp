@@ -230,4 +230,18 @@ namespace intel_driver
 		// 원래 코드 복원
 		return WriteToReadOnlyMemory(device_handle, kernel_NtAddAtom, original_kernel_function, sizeof(kernel_injected_jmp));
 	}
+
+	template<typename T, typename ...A>
+	bool CallNtosExport(HANDLE device_handle, const std::string& exportName, T* result, const A ...arguments)
+	{
+		uint64_t functionAddress = GetKernelModuleExport(device_handle, intel_driver::ntoskrnlAddr, exportName);
+
+		if (!functionAddress)
+		{
+			Log(L"[-] Failed to find kernel export!" << std::endl);
+			return false;
+		}
+
+		return CallKernelFunction<T>(device_handle, result, functionAddress, arguments...);
+	}
 }

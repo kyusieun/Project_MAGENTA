@@ -54,6 +54,9 @@
     <ClCompile Include="kdmapper\utils.cpp">
       <Filter>FixedImageMapping</Filter>
     </ClCompile>
+    <ClCompile Include="lpmapper\lpmapper.cpp">
+      <Filter>LPMapping</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.hpp">
@@ -82,6 +85,12 @@
     </ClInclude>
     <ClInclude Include="kdmapper\utils.hpp">
       <Filter>FixedImageMapping\include</Filter>
+    </ClInclude>
+    <ClInclude Include="lpmapper\shellcode.hpp">
+      <Filter>LPMapping</Filter>
+    </ClInclude>
+    <ClInclude Include="lpmapper\structs.hpp">
+      <Filter>LPMapping</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
