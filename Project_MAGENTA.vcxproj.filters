@@ -57,6 +57,15 @@
     <ClCompile Include="lpmapper\lpmapper.cpp">
       <Filter>LPMapping</Filter>
     </ClCompile>
+    <ClCompile Include="gdrvmapper\pe.cpp">
+      <Filter>DSEFixMapping</Filter>
+    </ClCompile>
+    <ClCompile Include="gdrvmapper\swind2.cpp">
+      <Filter>DSEFixMapping</Filter>
+    </ClCompile>
+    <ClCompile Include="gdrvmapper\gdmain.cpp">
+      <Filter>DSEFixMapping</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.hpp">
@@ -91,6 +100,21 @@
     </ClInclude>
     <ClInclude Include="lpmapper\structs.hpp">
       <Filter>LPMapping</Filter>
+    </ClInclude>
+    <ClInclude Include="gdrvmapper\bytes.h">
+      <Filter>DSEFixMapping</Filter>
+    </ClInclude>
+    <ClInclude Include="gdrvmapper\dropper.h">
+      <Filter>DSEFixMapping</Filter>
+    </ClInclude>
+    <ClInclude Include="gdrvmapper\global.h">
+      <Filter>DSEFixMapping</Filter>
+    </ClInclude>
+    <ClInclude Include="gdrvmapper\ntdll.h">
+      <Filter>DSEFixMapping</Filter>
+    </ClInclude>
+    <ClInclude Include="gdrvmapper\gdmain.hpp">
+      <Filter>DSEFixMapping</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

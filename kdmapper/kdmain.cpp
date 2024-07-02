@@ -98,19 +98,19 @@ int kdmain() {
 	setlocale(LC_ALL, "");
 	SetUnhandledExceptionFilter(SimplestCrashHandlerKD);
 
+	std::cout << "Driver name to load: ";
+
+	std::cin.ignore();
 	std::wstring driver_path;
 	std::getline(std::wcin, driver_path);
 
-
-	if (driver_path.size() >= 4 && driver_path.compare(driver_path.size() - 4, 4, L".sys") == 0) {
+	/*if (driver_path.size() >= 4 && driver_path.compare(driver_path.size() - 4, 4, L".sys") == 0) {
 		std::wcout << L"The driver path ends with .sys" << std::endl;
 	}
 	else {
 		std::wcout << L"The driver path does not end with .sys" << std::endl;
 		return -1;
-	}
-
-
+	}*/
 
 	if (!std::filesystem::exists(driver_path)) {
 		Log(L"[-] File " << driver_path << L" doesn't exist" << std::endl);

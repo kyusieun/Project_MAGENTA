@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{25f056ce-7e7f-4ba6-9acd-1e581814b204}</ProjectGuid>
+    <ProjectGuid>{57bb44c9-aa1b-45a3-9a98-b510b1ea5b50}</ProjectGuid>
     <RootNamespace>ProjectMAGENTA</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -126,39 +126,25 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="gdrvmapper\gdmain.cpp" />
-    <ClCompile Include="gdrvmapper\pe.cpp" />
-    <ClCompile Include="gdrvmapper\swind2.cpp" />
-    <ClCompile Include="kdmapper\intel_driver.cpp" />
-    <ClCompile Include="kdmapper\kdmain.cpp" />
-    <ClCompile Include="kdmapper\kdmapper.cpp" />
-    <ClCompile Include="kdmapper\portable_executable.cpp" />
-    <ClCompile Include="kdmapper\service.cpp" />
-    <ClCompile Include="kdmapper\utils.cpp" />
-    <ClCompile Include="lpmapper\lpmapper.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\desFix.cpp" />
+    <ClCompile Include="src\swind2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="gdrvmapper\bytes.h" />
-    <ClInclude Include="gdrvmapper\dropper.h" />
-    <ClInclude Include="gdrvmapper\gdmain.hpp" />
-    <ClInclude Include="gdrvmapper\global.h" />
-    <ClInclude Include="gdrvmapper\ntdll.h" />
-    <ClInclude Include="kdmapper\intel_driver.hpp" />
-    <ClInclude Include="kdmapper\intel_driver_resource.hpp" />
-    <ClInclude Include="kdmapper\kdmain.hpp" />
-    <ClInclude Include="kdmapper\kdmapper.hpp" />
-    <ClInclude Include="kdmapper\nt.hpp" />
-    <ClInclude Include="kdmapper\portable_executable.hpp" />
-    <ClInclude Include="kdmapper\service.hpp" />
-    <ClInclude Include="kdmapper\utils.hpp" />
-    <ClInclude Include="lpmapper\shellcode.hpp" />
-    <ClInclude Include="lpmapper\structs.hpp" />
-    <ClInclude Include="main.hpp" />
+    <ClInclude Include="include\common_header.h" />
+    <ClInclude Include="include\dsefix.hpp" />
+    <ClInclude Include="include\dseFix\bytes.h" />
+    <ClInclude Include="include\dseFix\dropper.h" />
+    <ClInclude Include="include\dseFix\dseFix.hpp" />
+    <ClInclude Include="include\dseFix\global.h" />
+    <ClInclude Include="include\dseFix\ntdll.h" />
+    <ClInclude Include="include\fixedImage.hpp" />
+    <ClInclude Include="include\lpMapper.hpp" />
+    <ClInclude Include="include\shellcode.hpp" />
+    <ClInclude Include="include\structs.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
