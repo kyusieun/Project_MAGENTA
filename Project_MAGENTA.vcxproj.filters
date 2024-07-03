@@ -117,4 +117,7 @@
       <Filter>DSEFixMapping</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="logo.hpp" />
+  </ItemGroup>
 </Project>

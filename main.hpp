@@ -12,3 +12,6 @@ int FixedImageMapping() {
 void MSRExec() {};
 void LargePageMapping() {};
 void IORingExec() {};
+
+void print_help();
+void print_choice();
