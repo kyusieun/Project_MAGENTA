@@ -30,10 +30,6 @@ void ExecuteFunction(int choice) {
             LargePageMapping();
             break;
         case 5:
-            std::cout << "Executing I/O Ring Exec..." << std::endl;
-            IORingExec();
-            break;
-        case 6:
             print_help();
             break;
         default:
@@ -55,14 +51,12 @@ void print_help()
     std::string FixedMapping_help = "This checks if the read/write capabilities of a vulnerable driver's physical memory can be exploited to forcibly load unauthorized drivers into kernel memory. This vulnerability can occur if a driver that provides access to physical memory can be loaded.";
     std::string MSRExec_help = "This checks if the MSRs used for syscall invocation can be manipulated. This vulnerability can occur if a vulnerable driver that provides the wrmsr functionality for interacting with MSRs can be loaded.";
     std::string LPMapping_help = "This checks if the .data section of Windows system drivers can be manipulated into an executable form. This vulnerability can occur if a Windows system driver can be loaded into large page memory.";
-    std::string IORing_help = "Have to write...";
 
     std::cout << "\n\n================ Help ================\n";
     std::cout << "1. DSEFix Mapping : \n" << DSEFix_help << "\n\n";
     std::cout << "2. Fixed Image Mapping : \n" << FixedMapping_help << "\n\n";
     std::cout << "3. MSRExec Mapping : \n" << MSRExec_help << "\n\n";
     std::cout << "4. Large Page Mapping : \n" << LPMapping_help << "\n\n";
-    std::cout << "5. I/O RIng Mapping : \n" << IORing_help << "\n\n";
     std::cout << "======================================\n\n";
 
     int choice;
@@ -78,8 +72,7 @@ void print_choice()
     std::cout << "2. Fixed Image Mapping" << std::endl;
     std::cout << "3. MSRExec" << std::endl;
     std::cout << "4. LargePageMapping" << std::endl;
-    std::cout << "5. I/O Ring Exec" << std::endl;
-    std::cout << "6. Help" << std::endl;
+    std::cout << "5. Help" << std::endl;
     std::cout << "Enter your choice (1-5): ";
 }
 
@@ -87,7 +80,7 @@ int main() {
     int choice;
 
     std::cout << logo << std::endl;
-    std::cout << "===== Welcome to <Check Your Own Vulneravle Driver> =====" << std::endl;
+    std::cout << "===== Welcome to [Penetrate Your Own Vulneravle Driver] =====" << std::endl;
     std::cout << "This tool checks if your system has vulnerabilities that could lead to a BYOVD attack." << std::endl;
 
     print_choice();
