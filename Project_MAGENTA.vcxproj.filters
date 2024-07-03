@@ -152,4 +152,7 @@
       <Filter>MSRExec</Filter>
     </MASM>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="logo.hpp" />
+  </ItemGroup>
 </Project>
