@@ -66,6 +66,12 @@
     <ClCompile Include="gdrvmapper\gdmain.cpp">
       <Filter>DSEFixMapping</Filter>
     </ClCompile>
+    <ClCompile Include="wrmsr\msrexec.cpp">
+      <Filter>MSRExec</Filter>
+    </ClCompile>
+    <ClCompile Include="wrmsr\msrmain.cpp">
+      <Filter>MSRExec</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.hpp">
@@ -116,5 +122,34 @@
     <ClInclude Include="gdrvmapper\gdmain.hpp">
       <Filter>DSEFixMapping</Filter>
     </ClInclude>
+    <ClInclude Include="wrmsr\ia32.hpp">
+      <Filter>MSRExec</Filter>
+    </ClInclude>
+    <ClInclude Include="wrmsr\loadup.hpp">
+      <Filter>MSRExec</Filter>
+    </ClInclude>
+    <ClInclude Include="wrmsr\msrexec.hpp">
+      <Filter>MSRExec</Filter>
+    </ClInclude>
+    <ClInclude Include="wrmsr\raw_driver.hpp">
+      <Filter>MSRExec</Filter>
+    </ClInclude>
+    <ClInclude Include="wrmsr\utils.hpp">
+      <Filter>MSRExec</Filter>
+    </ClInclude>
+    <ClInclude Include="wrmsr\vdm.hpp">
+      <Filter>MSRExec</Filter>
+    </ClInclude>
+    <ClInclude Include="wrmsr\syscall_handler.h">
+      <Filter>MSRExec</Filter>
+    </ClInclude>
+    <ClInclude Include="wrmsr\msrmain.hpp">
+      <Filter>MSRExec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="wrmsr\syscall_handler.asm">
+      <Filter>MSRExec</Filter>
+    </MASM>
   </ItemGroup>
 </Project>

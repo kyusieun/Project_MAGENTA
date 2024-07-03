@@ -2,6 +2,7 @@
 #include <windows.h>
 #include "./kdmapper/kdmain.hpp"
 #include "./gdrvmapper/gdmain.hpp"
+#include "./wrmsr/msrmain.hpp"
 
 void DSEFixMapping() {
 	gdmain();
@@ -9,6 +10,8 @@ void DSEFixMapping() {
 int FixedImageMapping() {
 	return kdmain();
 }
-void MSRExec() {};
+void MSRExec() {
+	msrmain();
+}
 void LargePageMapping() {};
 void IORingExec() {};

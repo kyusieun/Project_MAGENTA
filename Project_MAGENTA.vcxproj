@@ -54,6 +54,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
@@ -141,6 +142,8 @@
     <ClCompile Include="kdmapper\utils.cpp" />
     <ClCompile Include="lpmapper\lpmapper.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="wrmsr\msrexec.cpp" />
+    <ClCompile Include="wrmsr\msrmain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gdrvmapper\bytes.h" />
@@ -159,8 +162,22 @@
     <ClInclude Include="lpmapper\shellcode.hpp" />
     <ClInclude Include="lpmapper\structs.hpp" />
     <ClInclude Include="main.hpp" />
+    <ClInclude Include="wrmsr\ia32.hpp" />
+    <ClInclude Include="wrmsr\loadup.hpp" />
+    <ClInclude Include="wrmsr\msrexec.hpp" />
+    <ClInclude Include="wrmsr\msrmain.hpp" />
+    <ClInclude Include="wrmsr\raw_driver.hpp" />
+    <ClInclude Include="wrmsr\syscall_handler.h" />
+    <ClInclude Include="wrmsr\utils.hpp" />
+    <ClInclude Include="wrmsr\vdm.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="wrmsr\syscall_handler.asm">
+      <FileType>Document</FileType>
+    </MASM>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
   </ImportGroup>
 </Project>
