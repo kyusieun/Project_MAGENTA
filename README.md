@@ -1,9 +1,9 @@
 # Project MAGENTA
 
+Project MAGENTA is an integrated penetration testing tool that diagnoses the possibity of BYOVD(Bring Your Own Vulnerable Driver) attacks on your system. This comprehensive toolset includes several utilities to test and analyze various driver vulnerabilities on x64 Windows 10 systems.
 
-Project MAGENTA is an integrated penetration testing tool that diagnoses the possibity of BYOVD attacks on your system.
+# PYOTD Tool
 
-# PYOTD
 ## Prerequisites
 x64 windows 10
 
@@ -21,17 +21,16 @@ Below are the four features this tool includes:
     - Allocate memory to make the `data section` of Windows' own drivers, such as `beep.sys`, executable without having to raise the driver, allowing code to be allocated and executed
 
 ![Entry](./image/Entry.png)
+
 ## References
-https://github.com/hfiref0x/DSEFix?tab=readme-ov-file
 
-https://github.com/TheCruZ/kdmapper
+- [DSEFix](https://github.com/hfiref0x/DSEFix?tab=readme-ov-file)
+- [Fixed Image](https://github.com/TheCruZ/kdmapper)
+- [MSREXEC](https://github.com/backengineering/msrexec)
+- [LPMAPPER](https://github.com/VollRagm/lpmapper)
 
-https://github.com/backengineering/msrexec
-
-https://github.com/VollRagm/lpmapper
-
-## BLOG
-https://glowing-jewel-096.notion.site/Driver-Manual-Mapping-f0f51d7a8c7f4c5a9cbde6de1e2ac1d0
+## Blog
+[Driver Manual Mapping](https://glowing-jewel-096.notion.site/Driver-Manual-Mapping-f0f51d7a8c7f4c5a9cbde6de1e2ac1d0)
 
 
 ***
