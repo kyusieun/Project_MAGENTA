@@ -3,7 +3,7 @@
 
 Project MAGENTA is an integrated penetration testing tool that diagnoses the possibity of BYOVD attacks on your system.
 
-# PYOTD
+# PYOVD
 ## Prerequisites
 x64 windows 10
 
