@@ -4,7 +4,6 @@ Project MAGENTA is an integrated penetration testing tool that diagnoses the pos
 
 # PYOTD Tool
 
-# PYOTD
 ## Prerequisites
 x64 windows 10
 
