@@ -37,7 +37,7 @@ https://glowing-jewel-096.notion.site/Driver-Manual-Mapping-f0f51d7a8c7f4c5a9cbd
 ***
 ***
 
-# SYOVD Tool
+# SYOVD
 
 This tool is designed to detect vulnerable drivers on a Windows system. It performs the following tasks:
 1. Queries and hashes local system drivers.
