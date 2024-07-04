@@ -37,7 +37,7 @@ Below are the four features this tool includes:
 ***
 ***
 
-# SYOVD
+# SYOVD Tool
 
 This tool is designed to detect vulnerable drivers on a Windows system. It performs the following tasks:
 1. Queries and hashes local system drivers.
