@@ -1,6 +1,8 @@
 # Project MAGENTA
 
 Project MAGENTA is an integrated penetration testing tool that diagnoses the possibity of BYOVD(Bring Your Own Vulnerable Driver) attacks on your system. This comprehensive toolset includes several utilities to test and analyze various driver vulnerabilities on x64 Windows 10 systems.
+ppt: https://www.canva.com/design/DAGJZAevzuU/o7BaS-vxh0wRYtSlKpKwMQ/view?utm_content=DAGJZAevzuU&utm_campaign=designshare&utm_medium=link&utm_source=editor
+
 
 # PYOVD
 ## Prerequisites
